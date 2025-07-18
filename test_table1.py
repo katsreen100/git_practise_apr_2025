@@ -1,1 +1,1 @@
-print("This is table1 validation")
+print("hello world")
