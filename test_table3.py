@@ -1,0 +1,1 @@
+print("new table tst_table3 is created ")
