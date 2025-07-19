@@ -48,8 +48,8 @@ jobs:
         echo "host = $DATABRICKS_HOST" >> .databricks/config
         echo "token = $DATABRICKS_TOKEN" >> .databricks/config
 
-    - name: 🚀 Deploy Framework to DBFS
+    - name: 🚀 Deploy `src/` to DBFS
       env:
         DATABRICKS_CONFIG_FILE: .databricks/config
       run: |
-        databricks fs cp dq_framework/ dbfs:/dq_framework/ --recursive
+        databricks fs cp src/ dbfs:/git_practise_apr_2025/ --recursive
