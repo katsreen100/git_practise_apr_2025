@@ -1,0 +1,15 @@
+count check: FAIL
+Details: Count is not matching between source and target. source count4 and target count is 5
+
+Records Only in Target: FAIL
+Details: Count: 5, Sample Failed Records: [{'customer_id': 'CUST004'}, {'customer_id': 'CUST001'}, {'customer_id': 'CUST002'}, {'customer_id': 'CUST005'}, {'customer_id': 'CUST003'}]
+
+Records Only in Source: FAIL
+Details: Count: 4, Sample Failed Records: [{'customer_id': '3'}, {'customer_id': '1'}, {'customer_id': '4'}, {'customer_id': '2'}]
+
+data compare Check: FAIL
+Details: Data mismatch data: [{'customer_id': '1', 'full_name': 'John Smith', 'email': 'john.smith@example.com', 'phone': '555-1234', 'batch_id': '20241230', 'datafrom': 'source'}, {'customer_id': '3', 'full_name': 'Bob Johnson', 'email': 'bob.johnson@example.com', 'phone': '555-8765', 'batch_id': '20241230', 'datafrom': 'source'}, {'customer_id': '2', 'full_name': 'Alice Brown', 'email': 'alice.brown@example.com', 'phone': '555-5678', 'batch_id': '20241230', 'datafrom': 'source'}, {'customer_id': '4', 'full_name': 'Eve Davis', 'email': 'eve.davis@example.com', 'phone': '555-4321', 'batch_id': '20241230', 'datafrom': 'source'}, {'customer_id': 'CUST003', 'full_name': 'Charlie Brown', 'email': 'charlie.brown@example.com', 'phone': '5556667777', 'batch_id': 'BATCH202502', 'datafrom': 'target'}, {'customer_id': 'CUST005', 'full_name': 'Ethan Hunt', 'email': 'ethan.hunt@example.com', 'phone': '3332221111', 'batch_id': 'BATCH202503', 'datafrom': 'target'}, {'customer_id': 'CUST002', 'full_name': 'Bob Smith', 'email': 'bob.smith@example.com', 'phone': '9876543210', 'batch_id': 'BATCH202501', 'datafrom': 'target'}, {'customer_id': 'CUST004', 'full_name': 'Diana Prince', 'email': 'diana.prince@example.com', 'phone': '4445556666', 'batch_id': 'BATCH202502', 'datafrom': 'target'}, {'customer_id': 'CUST001', 'full_name': 'Alice Johnson', 'email': 'alice.johnson@example.com', 'phone': '1234567890', 'batch_id': 'BATCH202501', 'datafrom': 'target'}]
+
+Schema Check: FAIL
+Details: schema failed columns Count: 4, Sample Failed Records: [{'source_col_name': 'batch_id', 'target_col_name': 'batch_id', 'source_data_type': 'bigint', 'target_data_type': 'string', 'status': 'fail'}, {'source_col_name': 'customer_id', 'target_col_name': 'customer_id', 'source_data_type': 'bigint', 'target_data_type': 'string', 'status': 'fail'}, {'source_col_name': 'full_name', 'target_col_name': None, 'source_data_type': 'string', 'target_data_type': None, 'status': 'fail'}, {'source_col_name': None, 'target_col_name': 'name', 'source_data_type': None, 'target_data_type': 'string', 'status': 'fail'}]
+
