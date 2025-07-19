@@ -1,5 +1,5 @@
 from src.data_validations.count_check import count_val
-from src.data_validations.duplicate_check import duplicate_check
+from dqe_framework.src.data_validations.duplicate_check import duplicate_check
 from src.data_validations.unique_check import uniqueness_check
 from src.data_validations.null_check import null_value_check
 from src.data_validations.data_compare import data_compare

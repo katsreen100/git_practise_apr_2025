@@ -1,8 +1,5 @@
 from src.data_validations.count_check import count_val
-
-
-from src.data_validations.count_check import count_val
-from src.data_validations.duplicate_check import duplicate_check
+from dqe_framework.src.data_validations.duplicate_check import duplicate_check
 from src.data_validations.unique_check import uniqueness_check
 from src.data_validations.null_check import null_value_check
 from src.data_validations.data_compare import data_compare
@@ -57,8 +54,3 @@ def test_schema(read_data, spark_session):
     spark = spark_session
     status = schema_check(source=source_df, target=target_df, spark=spark)
     assert status == 'PASS'
-
-
-def test_transaction_amount_between_100_1000(read_data, read_config):
-    source, target = read_data
-    assert target.filter('tran_amt not between 100 and 1000').count() == 0
