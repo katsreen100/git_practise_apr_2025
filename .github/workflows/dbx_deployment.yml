@@ -52,4 +52,4 @@ jobs:
       env:
         DATABRICKS_CONFIG_FILE: .databricks/config
       run: |
-        databricks fs cp src/ dbfs:/git_practise_apr_2025/ --recursive
+        databricks fs cp git_practise_apr_2025/ dbfs:/git_practise_apr_2025/ --recursive
