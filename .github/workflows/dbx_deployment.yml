@@ -27,7 +27,7 @@ jobs:
 
     - name: ✅ Run Pytest
       run: |
-        pytest tests/test_dummy.py --junitxml=report.xml
+        pytest dqe_framework/tests/test_dummy.py --junitxml=report.xml
 
     - name: ⬆️ Upload Pytest Report
       uses: actions/upload-artifact@v4
