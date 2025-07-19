@@ -31,12 +31,12 @@ jobs:
     - name: Install Databricks CLI
       run: pip install databricks-cli
 
-    - name: Configure Databricks CLI
+    - name: Configure Databricks CLI (non-interactive)
       run: |
-        databricks configure --token <<EOF
-        ${{ secrets.DATABRICKS_HOST }}
-        ${{ secrets.DATABRICKS_TOKEN }}
-        EOF
+        mkdir -p ~/.databricks
+        echo "[DEFAULT]" > ~/.databricks/config
+        echo "host = ${{ secrets.DATABRICKS_HOST }}" >> ~/.databricks/config
+        echo "token = ${{ secrets.DATABRICKS_TOKEN }}" >> ~/.databricks/config
 
     - name: Deploy Framework to DBFS
       run: |
