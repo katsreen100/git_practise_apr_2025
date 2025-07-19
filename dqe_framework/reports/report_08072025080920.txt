@@ -1,0 +1,3 @@
+Null Value Check: FAIL
+Details: Failures: [{'column': 'email', 'null_count': 3, 'sample_failed_records': [{'customer_id': '3', 'name': 'Bob sreeni', 'email': None, 'phone': '555-8765', 'batch_id': '20241231'}, {'customer_id': '6', 'name': 'Hello Davis', 'email': 'NULL', 'phone': '555-4321', 'batch_id': '20241231'}, {'customer_id': '5', 'name': 'Eve Davis', 'email': '  ', 'phone': '555-4321', 'batch_id': '20241231'}]}]
+

@@ -1,0 +1,1 @@
+select a.*, b.dept_name from tablename a inner join table b on a.emp_no=b.emp_no
