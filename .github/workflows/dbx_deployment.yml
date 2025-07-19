@@ -29,7 +29,7 @@ jobs:
         pytest tests/ --junitxml=report.xml
 
     - name: Upload Pytest Report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: pytest-report
         path: report.xml
