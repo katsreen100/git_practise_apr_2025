@@ -53,3 +53,9 @@ jobs:
         DATABRICKS_CONFIG_FILE: .databricks/config
       run: |
         databricks fs cp dqe_framework/ dbfs:/git_practise_apr_2025/ --recursive
+
+    - name: 🚀 Submit Databricks Job to run main.py
+      env:
+        DATABRICKS_CONFIG_FILE: .databricks/config
+      run: |
+        databricks runs submit --json-file run_config.json
