@@ -1,5 +1,5 @@
 source:
-  path: "C:\\Users\\Admin\\PycharmProjects\\eal_framework_april_2025\\input_files\\customer_data\\customer_data_01.csv"
+  path: "C:\\Users\\Admin\\PycharmProjects\\etl_framework_april_2025\\input_files\\customer_data\\customer_data_01.csv"
   type: "csv"
   schema: "Y"
   options:
