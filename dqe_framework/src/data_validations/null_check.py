@@ -11,7 +11,7 @@ def null_value_check(df, null_cols):
     for column in null_cols:
         print("column", column)
         failing_rows = df.filter(
-            (col(column).isNull()) | (trim(col(column)) == "") | (upper(col(column)) == "NULL") | (upper(col(column)) == "na"))
+            (col(column).isNull()) | (trim(col(column)) == "") | (upper(col(column)) == "NULL") | (upper(col(column)) == "NA"))
         null_count = failing_rows.count()
         print("null_count", null_count)
         if null_count > 0:
