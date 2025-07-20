@@ -1,0 +1,12 @@
+count check: FAIL
+Details: Count is not matching between source and target. source count4 and target count is 5
+
+Records Only in Target: FAIL
+Details: Count: 4, Sample Failed Records: [{'customer_id': '5'}, {'customer_id': '5'}, {'customer_id': '5'}, {'customer_id': '6'}]
+
+Records Only in Source: FAIL
+Details: Count: 3, Sample Failed Records: [{'customer_id': '1'}, {'customer_id': '4'}, {'customer_id': '2'}]
+
+Duplicate Check: FAIL
+Details: Duplicate Count: 1, Sample Failed Records: [{'customer_id': '5', 'email': 'eve.dummy1@example.com', 'count': 2}]
+

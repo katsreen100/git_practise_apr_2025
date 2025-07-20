@@ -1,0 +1,3 @@
+Schema Check: FAIL
+Details: schema failed columns Count: 2, Sample Failed Records: [{'source_col_name': 'batch_id', 'target_col_name': 'batch_id', 'source_data_type': 'int', 'target_data_type': 'string', 'status': 'fail'}, {'source_col_name': 'customer_id', 'target_col_name': 'customer_id', 'source_data_type': 'int', 'target_data_type': 'string', 'status': 'fail'}]
+

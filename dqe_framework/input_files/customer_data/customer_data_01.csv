@@ -1,0 +1,6 @@
+customer_id,name,email,phone,batch_id
+CUST001,Alice Johnson,alice.johnson@example.com,1234567890,BATCH202501
+CUST002,Bob Smith,bob.smith@example.com,9876543210,BATCH202501
+CUST003,Charlie Brown,charlie.brown@example.com,5556667777,BATCH202502
+CUST004,Diana Prince,diana.prince@example.com,4445556666,BATCH202502
+CUST005,Ethan Hunt,ethan.hunt@example.com,3332221111,BATCH202503

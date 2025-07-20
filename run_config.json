@@ -1,0 +1,13 @@
+{
+  "name": "DQ Framework Job",
+  "new_cluster": {
+    "spark_version": "13.3.x-scala2.12",
+    "node_type_id": "Standard_DS3_v2",
+    "num_workers": 2
+  },
+  "spark_python_task": {
+    "python_file": "dbfs:/git_practise_apr_2025/main.py"
+  },
+  "timeout_seconds": 1800,
+  "max_retries": 1
+}
