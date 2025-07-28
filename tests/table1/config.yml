@@ -1,0 +1,4 @@
+source_table: mydb.source_table
+target_table: mydb.target_table
+key_columns: [id]
+value_columns: [val]
